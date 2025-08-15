@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🎯 Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+    <h1>🎯 Number Guessing Game</h1>
+    <p class="subtitle">Guess a number between <b>1</b> and <b>100</b></p>
+
+    <div class="input-group">
+        <input type="number" id="guessInput" placeholder="Enter guess" min="1" max="100">
+        <button class="btn primary" onclick="sendGuess()">Submit Guess</button>
+    </div>
+
+    <div class="buttons">
+        <button class="btn secondary" onclick="resetGame()">🔄 New Game</button>
+    </div>
+
+    <p class="message" id="message"></p>
+    
+    <div class="score-board">
+        <span>🏆 Score: <b id="score">0</b></span>
+    </div>
+</div>
+
+<script>
+    const API_URL = "/api/game";
+
+    async function sendGuess() {
+        const guess = document.getElementById("guessInput").value;
+        if (!guess) {
+            document.getElementById("message").innerText = "⚠️ Please enter a number!";
+            return;
+        }
+        const response = await fetch(`${API_URL}/guess?number=${guess}`, { method: "POST" });
+        const message = await response.text();
+        document.getElementById("message").innerText = message;
+        updateScore();
+        document.getElementById("guessInput").value = "";
+    }
+
+    async function resetGame() {
+        await fetch(`${API_URL}/reset`, { method: "POST" });
+        document.getElementById("message").innerText = "🔄 New game started! Try your luck!";
+    }
+
+    async function updateScore() {
+        const res = await fetch(`${API_URL}/score`);
+        const score = await res.json();
+        document.getElementById("score").innerText = score;
+    }
+</script>
+
+</body>
+</html>
