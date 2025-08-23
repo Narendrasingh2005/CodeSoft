@@ -39,3 +39,36 @@
 ---
 
 ## 📂 Project Structure
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\
+
+
+
+# 🎓 Student Grade Calculator
+
+A simple **Spring Boot + HTML/CSS/JavaScript** application that allows students to calculate their **Total Marks**, **Average Percentage**, and **Grade** based on the marks entered.
+
+---
+
+## 🚀 Features
+- ✅ Enter multiple subject marks (comma separated)  
+- ✅ Calculates **Total Marks**  
+- ✅ Calculates **Average Percentage**  
+- ✅ Assigns Grade (A+, A, B, C, D, F) based on percentage  
+- ✅ Clean and responsive frontend with attractive UI  
+- ✅ Backend powered by **Spring Boot REST API**
+
+---
+
+## 🛠️ Tech Stack
+### Backend
+- Java 17+  
+- Spring Boot (Web, DevTools)  
+
+### Frontend
+- HTML5  
+- CSS3 (modern UI)  
+- JavaScript (fetch API for backend calls)  
+
+---
+
+## 📂 Project Structure
