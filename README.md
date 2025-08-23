@@ -39,36 +39,67 @@
 ---
 
 ## 📂 Project Structure
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
-# 🎓 Student Grade Calculator
+# 🎓 Student Grade Calculator  
+*A full-stack project built with Spring Boot, HTML, CSS, and JavaScript to calculate student grades.*  
 
-A simple **Spring Boot + HTML/CSS/JavaScript** application that allows students to calculate their **Total Marks**, **Average Percentage**, and **Grade** based on the marks entered.
-
----
-
-## 🚀 Features
-- ✅ Enter multiple subject marks (comma separated)  
-- ✅ Calculates **Total Marks**  
-- ✅ Calculates **Average Percentage**  
-- ✅ Assigns Grade (A+, A, B, C, D, F) based on percentage  
-- ✅ Clean and responsive frontend with attractive UI  
-- ✅ Backend powered by **Spring Boot REST API**
+![Java](https://img.shields.io/badge/Java-17%2B-orange?logo=java)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen?logo=springboot)
+![Frontend](https://img.shields.io/badge/Frontend-HTML%2FCSS%2FJS-blue)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ---
 
-## 🛠️ Tech Stack
-### Backend
-- Java 17+  
-- Spring Boot (Web, DevTools)  
+## 📸 Preview
+### Homepage  
+<img width="1148" alt="Homepage Screenshot" src="images/home.png" />
 
-### Frontend
-- HTML5  
-- CSS3 (modern UI)  
-- JavaScript (fetch API for backend calls)  
+### Result Page  
+<img width="1148" alt="Result Screenshot" src="images/result.png" />
+
+---
+
+## ✨ Features
+- 📝 Enter marks for multiple subjects  
+- ➕ Calculates **Total Marks**  
+- 📊 Calculates **Average Percentage**  
+- 🏆 Assigns **Grade (A+, A, B, C, D, F)** automatically  
+- 🎨 Attractive and responsive frontend  
+- ⚡ Powered by Spring Boot REST API  
+
+---
+
+## 🛠 Tech Stack
+### Backend:
+- Java 17+
+- Spring Boot (Spring Web)
+- Maven
+
+### Frontend:
+- HTML5
+- CSS3 (Custom styling with images)
+- JavaScript (Fetch API for backend calls)
 
 ---
 
 ## 📂 Project Structure
+student-grade-calculator/
+│
+├── src/ # Java backend code
+│ ├── main/java/... # Controllers, Models
+│ ├── main/resources/ # Application properties
+│
+├── frontend/ # HTML, CSS, JS files
+│ ├── index.html
+│ ├── style.css
+│ └── script.js
+│
+├── images/ # Screenshots for README
+│ ├── home.png
+│ └── result.png
+│
+├── pom.xml # Maven dependencies
+└── README.md # Project documentation
