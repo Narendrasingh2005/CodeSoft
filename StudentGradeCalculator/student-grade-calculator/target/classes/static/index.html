@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Grade Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="card">
+      <h1>📘 Student Grade Calculator</h1>
+      <p class="subtitle">Enter marks and calculate your grade instantly!</p>
+
+      <form id="gradeForm">
+        <label for="marks">Marks (comma separated):</label>
+        <input type="text" id="marks" placeholder="e.g. 85, 90, 78, 88" required>
+        <button type="submit">Calculate</button>
+      </form>
+
+      <div id="result" class="result-box hidden"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
