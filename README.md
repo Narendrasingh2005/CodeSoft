@@ -54,11 +54,8 @@
 ---
 
 ## 📸 Preview
-### Homepage  
-<img width="1148" alt="Homepage Screenshot" src="images/home.png" />
+<img width="979" height="884" alt="Screenshot 2025-08-23 180726" src="https://github.com/user-attachments/assets/7ac3b314-03b0-417f-b736-d3a0f396c756" />
 
-### Result Page  
-<img width="1148" alt="Result Screenshot" src="images/result.png" />
 
 ---
 
