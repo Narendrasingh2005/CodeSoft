@@ -99,3 +99,64 @@ student-grade-calculator/
 │
 ├── pom.xml # Maven dependencies
 └── README.md # Project documentation
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# 🌍 Currency Converter  
+*A real-time currency converter built with Spring Boot, HTML, CSS, and JavaScript.*  
+
+![Java](https://img.shields.io/badge/Java-17%2B-orange?logo=java)  
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen?logo=springboot)  
+![Frontend](https://img.shields.io/badge/Frontend-HTML%2FCSS%2FJS-blue)  
+![API](https://img.shields.io/badge/API-Frankfurter-purple)  
+![License](https://img.shields.io/badge/License-MIT-yellow)  
+
+---
+
+## 📸 Preview  
+ 
+<img width="917" height="789" alt="Screenshot 2025-08-23 193117" src="https://github.com/user-attachments/assets/8d0b660a-74bd-4f44-b1d2-7f3d5278df2d" />
+
+---
+
+## ✨ Features  
+- 💱 Convert between major world currencies  
+- 🌐 Real-time exchange rates (via [Frankfurter API](https://www.frankfurter.app/))  
+- 🔢 Input amount and get instant conversion  
+- 📊 Displays exchange rate used  
+- 🎨 Clean and responsive UI with gradient background  
+
+---
+
+## 🛠 Tech Stack  
+
+### Backend:  
+- Java 17+  
+- Spring Boot (Spring Web)  
+- Maven  
+
+### Frontend:  
+- HTML5  
+- CSS3 (Custom styling with gradient UI)  
+- JavaScript (Fetch API for calling backend)  
+
+---
+
+## 📂 Project Structure  
+
+currency-converter/
+│── src/main/java/com/currency/currency_converter/
+│ ├── CurrencyConverterApplication.java
+│ └── controller/
+│ └── CurrencyController.java
+│
+│── src/main/resources/
+│ ├── static/
+│ │ ├── index.html
+│ │ ├── style.css
+│ │ └── script.js
+│ └── application.properties
+│
+│── pom.xml
+│── README.md
